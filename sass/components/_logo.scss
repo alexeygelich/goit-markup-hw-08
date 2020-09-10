@@ -31,7 +31,11 @@
 
   .footer & {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: $white-color;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+    }
   }
 }

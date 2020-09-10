@@ -51,7 +51,7 @@
             </ul>
           </nav>
 
-          <address class="address">
+          <address class="address-header">
             <ul class="top-address">
               <li class="item">
                 <a href="mailto:info@devstudio.com" class="top-address--link"
@@ -392,76 +392,80 @@
 
     <!-- Footer -->
 
-    <footer class="footer" hidden>
+    <footer class="footer">
       <div class="footer-container">
-        <div class="address">
-          <a lang="en" href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer-address">
-              <li class="item">
-                <a
-                  href="https://goo.gl/maps/jd2Q6fffBSF1kD2X9"
-                  class="footer-address__link"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-wrapper">
+          <div class="address">
+            <a lang="en" href="./index.html" class="logo"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+
+            <address>
+              <ul class="footer-address">
+                <li class="item">
+                  <a
+                    href="https://goo.gl/maps/jd2Q6fffBSF1kD2X9"
+                    class="footer-address__link"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="mailto:info@example.com" class="footer-address__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:+380991111111" class="footer-address__link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Блок присоединяйтесь -->
+
+          <div class="join">
+            <b class="join-title">присоединяйтесь</b>
+            <ul class="social">
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="footer-address__link"
-                  >info@example.com</a
-                >
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="footer-address__link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <!-- Блок присоединяйтесь -->
-
-        <div class="join">
-          <b class="join-title">присоединяйтесь</b>
-          <ul class="social">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
         <!-- Подпишитесь на рассылку -->
 
         <div class="subscribe">
           <p class="subscribe--title">Подпишитесь на рассылку</p>
-          <form>
+          <form class="subscribe-form">
             <label class="subscribe--label">
               <input
                 type="email"

@@ -5,13 +5,35 @@
 
   &-container {
     @extend %container;
-    display: flex;
-    justify-content: space-between;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   & .address {
-    margin-right: 70px;
-    margin-left: 0;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-left: 0;
+    }
+  }
+
+  &-wrapper {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -26,7 +48,11 @@
   }
 
   & .item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   & .item:first-child &__link {
