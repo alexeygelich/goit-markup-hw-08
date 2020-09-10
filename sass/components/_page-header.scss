@@ -1,0 +1,70 @@
+.header-portfolio {
+  border-bottom: 2px solid #ececec;
+}
+
+.top-address {
+  @extend %list;
+  display: flex;
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.top-address--link {
+  @extend %link;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: $main-color;
+  transition: color $time-transition $function-time;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:hover .mail-svg,
+  &:focus .mail-svg {
+    fill: $accent-color;
+  }
+
+  &:hover .phone-svg,
+  &:focus .phone-svg {
+    fill: $accent-color;
+  }
+}
+
+.mail-svg {
+  margin-right: 10px;
+  fill: $main-color;
+  transition: fill $time-transition $function-time;
+}
+
+.phone-svg {
+  margin-right: 10px;
+  fill: $main-color;
+  transition: fill $time-transition $function-time;
+}
+
+.navigation {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.main-nav {
+  @extend %list;
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  margin-left: auto;
+}

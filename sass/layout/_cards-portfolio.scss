@@ -1,0 +1,88 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-container {
+    @extend %container;
+  }
+}
+
+.cards {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  & .item {
+    margin: 15px;
+    width: 370px;
+  }
+
+  & .item:hover .card-desc--text {
+    transform: translateY(0);
+  }
+
+  &-block {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.cards-link {
+  @extend %link;
+  transition: box-shadow $time-transition $function-time;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.name-card {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-color;
+}
+
+.text-card {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.card-desc {
+  padding: 20px 24px;
+  border-left: 1px solid $cards-border-color;
+  border-right: 1px solid $cards-border-color;
+  border-bottom: 1px solid $cards-border-color;
+
+  &--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform $time-transition $function-time;
+  }
+}

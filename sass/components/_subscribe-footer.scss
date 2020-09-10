@@ -1,0 +1,51 @@
+.subscribe--title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.user-email {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+  color: $white-color;
+}
+
+.user-email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.user-email:focus {
+  outline: none;
+}
+
+.subscribe--label {
+  position: relative;
+  margin-right: 12px;
+}
+
+.subscribe--button__text {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+}
+
+.subscribe .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

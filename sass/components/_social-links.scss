@@ -1,0 +1,35 @@
+.social {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-svg {
+    fill: #afb1b8;
+    transition: fill $time-transition $function-time;
+  }
+}
+
+.social-link {
+  @extend %link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color $time-transition $function-time;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .social-svg,
+  &:focus .social-svg {
+    fill: $white-color;
+  }
+}

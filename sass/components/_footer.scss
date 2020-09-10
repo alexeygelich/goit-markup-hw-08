@@ -1,0 +1,40 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bgc-footer;
+
+  &-container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .address {
+    margin-right: 70px;
+    margin-left: 0;
+  }
+}
+
+.footer-address {
+  @extend %list;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  & .contact-address {
+    color: $white-color;
+  }
+
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  & .item:first-child &__link {
+    color: $white-color;
+  }
+}
+
+.footer-address__link {
+  @extend %link;
+  color: $footer-color;
+}

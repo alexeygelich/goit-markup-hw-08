@@ -1,0 +1,26 @@
+.join {
+  margin-right: 93px;
+}
+
+.join-title {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.join .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color $time-transition $function-time;
+}
+
+.join .social-svg {
+  fill: $white-color;
+}
+
+.join .social-link:hover,
+.join .social-link:focus {
+  background-color: $accent-color;
+}

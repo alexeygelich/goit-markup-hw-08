@@ -1,0 +1,46 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-container {
+    @extend %container;
+  }
+
+  &-list {
+    @extend %list;
+    display: flex;
+  }
+
+  .item {
+    padding-bottom: 30px;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $title-color;
+}
+
+.specialty {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.photo {
+  margin-bottom: 30px;
+}
