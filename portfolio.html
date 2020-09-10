@@ -14,47 +14,68 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="main-nav">
+      <div class="header-container">
         <a lang="en" href="./index.html" class="logo"
           ><span class="logo-accent">Web</span>Studio</a
         >
-        <nav>
-          <ul class="top-menu">
-            <li class="item">
-              <a href="./index.html" class="top-menu--link">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="top-menu--link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="item">
-              <a href="" class="top-menu--link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
-      <address class="address">
-        <ul class="top-address">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="top-address--link"
-              ><svg class="mail-svg" width="16" height="12">
-                <use href="./image/sprite.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="top-address--link"
-              ><svg class="phone-svg" width="10" height="16">
-                <use href="./image/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <button type="button" class="menu-button">
+          <svg
+            class="mobile-menu-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./image/sprite.svg#icon-menu-mob"
+            ></use>
+            <use
+              class="icon-close"
+              href="./image/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="navigation-links">
+          <nav>
+            <ul class="top-menu">
+              <li class="item">
+                <a href="./index.html" class="top-menu--link">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="top-menu--link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="item">
+                <a href="" class="top-menu--link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address-header">
+            <ul class="top-address">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="top-address--link"
+                  ><svg class="mail-svg" width="16" height="12">
+                    <use href="./image/sprite.svg#icon-envelope-hover"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="top-address--link"
+                  ><svg class="phone-svg" width="10" height="16">
+                    <use href="./image/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
 
     <!-- Main -->
@@ -80,7 +101,7 @@
 
           <!-- Карточки -->
 
-          <ul class="cards">
+          <ul class="cards" hidden>
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
@@ -297,74 +318,78 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <div class="address">
-          <a lang="en" href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer-address">
-              <li class="item">
-                <a
-                  href="https://goo.gl/maps/jd2Q6fffBSF1kD2X9"
-                  class="footer-address__link"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-wrapper">
+          <div class="address">
+            <a lang="en" href="./index.html" class="logo"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+
+            <address>
+              <ul class="footer-address">
+                <li class="item">
+                  <a
+                    href="https://goo.gl/maps/jd2Q6fffBSF1kD2X9"
+                    class="footer-address__link"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="mailto:info@example.com" class="footer-address__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:+380991111111" class="footer-address__link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Блок присоединяйтесь -->
+
+          <div class="join">
+            <b class="join-title">присоединяйтесь</b>
+            <ul class="social">
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="footer-address__link"
-                  >info@example.com</a
-                >
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="footer-address__link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-svg" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <!-- Блок присоединяйтесь -->
-
-        <div class="join">
-          <b class="join-title">присоединяйтесь</b>
-          <ul class="social">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-svg" width="20" height="20">
-                  <use href="./image/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
         <!-- Подпишитесь на рассылку -->
 
         <div class="subscribe">
           <p class="subscribe--title">Подпишитесь на рассылку</p>
-          <form>
+          <form class="subscribe-form">
             <label class="subscribe--label">
               <input
                 type="email"

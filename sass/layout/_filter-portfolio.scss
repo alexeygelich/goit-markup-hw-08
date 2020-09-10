@@ -1,15 +1,25 @@
 .filter {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: -8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    margin: 8px;
+  }
 }
 
-.filter .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-link {
+.filter .filter-link {
   @extend %link;
   display: block;
   padding: 6px 22px;
