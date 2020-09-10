@@ -1,41 +1,88 @@
-.header-portfolio {
-  border-bottom: 2px solid #ececec;
+.page-header {
+  position: relative;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    height: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .top-address {
   @extend %list;
-  display: flex;
 
-  .item {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
   }
 
   .item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
-}
 
-.top-address--link {
-  @extend %link;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  color: $main-color;
-  transition: color $time-transition $function-time;
+  &--link {
+    @extend %link;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
 
-  &:hover,
-  &:focus {
+    color: $main-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+
+  &--link:hover,
+  &--link:focus {
     color: $accent-color;
   }
 
-  &:hover .mail-svg,
-  &:focus .mail-svg {
+  &--link:hover .mail-svg,
+  &--link:focus .mail-svg {
     fill: $accent-color;
   }
 
-  &:hover .phone-svg,
-  &:focus .phone-svg {
+  &--link:hover .phone-svg,
+  &--link:focus .phone-svg {
     fill: $accent-color;
   }
 }
@@ -44,27 +91,62 @@
   margin-right: 10px;
   fill: $main-color;
   transition: fill $time-transition $function-time;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
 }
 
 .phone-svg {
   margin-right: 10px;
   fill: $main-color;
   transition: fill $time-transition $function-time;
-}
 
-.navigation {
-  @extend %container;
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
-.main-nav {
-  @extend %list;
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
 }
 
 .address {
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
+// =============
+
+// @extend %container;
+// display: flex;
+// align-items: center;
+// height: 80px;
+
+// .top-address {
+//   @extend %list;
+//   display: flex;
+
+//   .item {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .top-address--link {
+//   @extend %link;
+//   display: flex;
+//   align-items: center;
+//   font-weight: 500;
+//   color: $main-color;
+//   transition: color $time-transition $function-time;
+
+//
+
+// .main-nav {
+//   @extend %list;
+//   display: flex;
+//   align-items: center;
+// }

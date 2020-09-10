@@ -1,17 +1,32 @@
 .logo {
   @extend %link;
-  margin-right: 93px;
-
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-
   color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &-accent {
     color: $accent-color;
+  }
+
+  // =======
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+
+    font-size: 26px;
+
+    line-height: 1.19;
   }
 
   .footer & {

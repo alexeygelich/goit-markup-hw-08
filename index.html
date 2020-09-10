@@ -3,19 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="navigation">
-        <div class="main-nav">
-          <a lang="en" href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
+    <header class="page-header">
+      <div class="header-container">
+        <a lang="en" href="./index.html" class="logo"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+
+        <button type="button" class="menu-button">
+          <svg
+            class="mobile-menu-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
+            <use
+              class="icon-menu"
+              href="./image/sprite.svg#icon-menu-mob"
+            ></use>
+            <use
+              class="icon-close"
+              href="./image/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="navigation-links">
           <nav>
             <ul class="top-menu">
               <li class="item">
@@ -29,34 +50,34 @@
               </li>
             </ul>
           </nav>
-        </div>
 
-        <address class="address">
-          <ul class="top-address">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="top-address--link"
-                ><svg class="mail-svg" width="16" height="12">
-                  <use href="./image/sprite.svg#icon-envelope-hover"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="top-address--link"
-                ><svg class="phone-svg" width="10" height="16">
-                  <use href="./image/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <address class="address">
+            <ul class="top-address">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="top-address--link"
+                  ><svg class="mail-svg" width="16" height="12">
+                    <use href="./image/sprite.svg#icon-envelope-hover"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="top-address--link"
+                  ><svg class="phone-svg" width="10" height="16">
+                    <use href="./image/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
-    <main>
+    <main hidden>
       <!-- Герой -->
 
-      <section class="hero">
+      <section class="hero" hidden>
         <div class="hero-container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>
@@ -67,7 +88,7 @@
 
       <!-- Преимущества -->
 
-      <section class="advantage">
+      <section class="advantage" hidden>
         <div class="advantage-container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantage-list">
@@ -125,7 +146,7 @@
 
       <!-- Чем мы занимаемся -->
 
-      <section class="work">
+      <section class="work" hidden>
         <div class="work-container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -162,7 +183,7 @@
 
       <!-- Наша команда -->
 
-      <section class="team">
+      <section class="team" hidden>
         <div class="team-container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
@@ -336,7 +357,7 @@
 
       <!-- Клиенты -->
 
-      <section class="clients">
+      <section class="clients" hidden>
         <div class="clients-container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -383,7 +404,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer" hidden>
       <div class="footer-container">
         <div class="address">
           <a lang="en" href="./index.html" class="logo"
@@ -471,7 +492,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal hidden>
       <div class="modal">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
