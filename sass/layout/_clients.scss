@@ -1,6 +1,11 @@
 .clients {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 
   &-container {
     @extend %container;
@@ -9,10 +14,21 @@
   &-list {
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
-  &-item:not(:last-child) {
-    margin-right: 30px;
+  &-item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 90px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 180px) / 6);
+    }
   }
 
   &-svg {
@@ -25,12 +41,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color $time-transition $function-time;
+
+  @media screen and (min-width: 768px) {
+    max-width: 226px;
+  }
 
   &:hover,
   &:focus {
