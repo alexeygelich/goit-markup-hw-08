@@ -16,8 +16,8 @@
   margin: auto;
   padding: 40px;
   transform: scale(1);
-  width: 528px;
-  max-height: 581px;
+  max-width: calc(100% - 20px);
+  width: 450px;
   background: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,15 +26,23 @@
   transition: transform $time-transition $function-time,
     opacity $time-transition $function-time;
 
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
   &-title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-color;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
 
   &-button {
@@ -78,7 +86,7 @@
   pointer-events: none;
 
   & .modal {
-    transform: scale(1.5);
+    transform: scale(0.7);
     opacity: 0;
   }
 }
@@ -145,14 +153,25 @@
 
 .label-policy {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
 
   &-text {
     display: flex;
-    line-height: 1.71;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $main-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
