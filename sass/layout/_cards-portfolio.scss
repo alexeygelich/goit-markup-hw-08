@@ -14,17 +14,28 @@
 
 .cards {
   @extend %list;
-  display: none;
-  // display: flex;
-  flex-wrap: wrap;
+
   margin: -15px;
 
-  & .item {
-    margin: 15px;
-    width: 370px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  & .item:hover .card-desc--text {
+  .item {
+    max-width: 450px;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+      max-width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: calc((100% - 90px) / 3);
+    }
+  }
+
+  .item:hover .card-desc--text {
     transform: translateY(0);
   }
 
@@ -91,4 +102,8 @@
     transform: translateY(100%);
     transition: transform $time-transition $function-time;
   }
+}
+
+.card-foto {
+  width: 100%;
 }

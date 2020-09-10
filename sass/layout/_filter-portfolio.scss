@@ -7,15 +7,22 @@
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
   }
 
   .item {
     margin: 8px;
+  }
+
+  &-wrapper {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
