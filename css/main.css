@@ -283,7 +283,25 @@ summary {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container, .advantage-container, .work-container, .team-container, .clients-container, .footer-container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container, .advantage-container, .work-container, .team-container, .clients-container, .footer-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container, .advantage-container, .work-container, .team-container, .clients-container, .footer-container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -637,11 +655,32 @@ button {
 .hero {
   padding-top: 50px;
   padding-bottom: 50px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  min-height: 600px;
+  height: 400px;
+  width: 100%;
   background-color: #212121;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-Img.jpg");
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero-container {
@@ -656,14 +695,22 @@ button {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   color: #ffffff;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .advantage {
