@@ -16,6 +16,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 :root {
+  -moz-tab-size: 4;
   tab-size: 4;
 }
 
@@ -269,6 +270,14 @@ summary {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-menu, .top-address, .filter, .cards, .footer-address, .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .logo, .top-menu--link, .top-address--link, .filter .filter-link, .cards-link, .footer-address__link, .social-link {
@@ -579,7 +588,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-address .item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -872,10 +881,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-.footer-address .contact-address {
-  color: #ffffff;
-}
-
 .footer-address .item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -1046,3 +1051,4 @@ button {
 .join .social-link:focus {
   background-color: #2196f3;
 }
+/*# sourceMappingURL=portfolio.css.map */

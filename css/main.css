@@ -17,6 +17,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 :root {
+  -moz-tab-size: 4;
   tab-size: 4;
 }
 
@@ -270,6 +271,14 @@ summary {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-menu, .top-address, .advantage-list, .work-list, .team-list, .clients-list, .footer-address, .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .logo, .top-menu--link, .top-address--link, .footer-address__link, .social-link {
@@ -580,7 +589,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-address .item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -807,45 +816,42 @@ button {
 
 .work {
   display: none;
-  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
+    margin-bottom: 94px;
+  }
+  .work .item {
+    position: relative;
+    width: 370px;
+  }
+  .work .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .work--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
   }
 }
 
 .work-list {
   display: flex;
-}
-
-.work .item {
-  position: relative;
-  width: 370px;
-}
-
-.work .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.work--title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -1030,10 +1036,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.footer-address .contact-address {
-  color: #ffffff;
 }
 
 .footer-address .item:not(:last-child) {
@@ -1433,3 +1435,4 @@ button {
 .join .social-link:focus {
   background-color: #2196f3;
 }
+/*# sourceMappingURL=main.css.map */
