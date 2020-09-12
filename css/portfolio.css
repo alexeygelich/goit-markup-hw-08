@@ -424,6 +424,7 @@ button {
   .menu-button.is-open .icon-close,
   .menu-button.is-open ~ .navigation-links {
     display: block;
+    z-index: 1;
   }
 }
 

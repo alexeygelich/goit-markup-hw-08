@@ -12,19 +12,59 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../image/hero-Img.jpg');
-
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 768px;
-  }
+    url('../image/hero-mobil.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../image/hero-mobil2x.jpg');
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../image/hero-tablet.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../image/hero-tablet2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../image/hero-desc.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../image/hero-desc2x.jpg');
+    }
   }
 
   &-container {
@@ -33,6 +73,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    // @media screen and (max-width: 767px) {
+    //   max-width: 480px;
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //   max-width: 768px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   max-width: 1600px;
+    //   height: 600px;
+    // }
   }
 }
 

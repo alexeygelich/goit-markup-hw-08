@@ -19,7 +19,7 @@
           ><span class="logo-accent">Web</span>Studio</a
         >
 
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button" data-menu-button>
           <svg
             class="mobile-menu-icon"
             width="40"
@@ -107,11 +107,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/sait.jpg"
-                    alt="Веб-сайт компании"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/sait-370.webp 370w,
+                        ./image/sait-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/sait-354.webp 354w,
+                        ./image/sait-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/sait-450.webp 450w,
+                        ./image/sait-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/sait-354.webp 354w,
+                        ./image/sait-370.webp 370w,
+                        ./image/sait-450.webp 450w,
+                        ./image/sait-708.webp 708w,
+                        ./image/sait-740.webp 740w,
+                        ./image/sait-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      alt="Веб-сайт компании"
+                      class="card-foto"
+                      src="./image/sait-354.jpg"
+                      srcset="
+                        ./image/sait-354.jpg 354w,
+                        ./image/sait-370.jpg 370w,
+                        ./image/sait-450.jpg 450w,
+                        ./image/sait-708.jpg 708w,
+                        ./image/sait-740.jpg 740w,
+                        ./image/sait-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -128,11 +179,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/basketball.jpg"
-                    alt="Дизайн постера"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/basketball-370.webp 370w,
+                        ./image/basketball-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/basketball-354.webp 354w,
+                        ./image/basketball-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/basketball-450.webp 450w,
+                        ./image/basketball-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/basketball-354.webp 354w,
+                        ./image/basketball-370.webp 370w,
+                        ./image/basketball-450.webp 450w,
+                        ./image/basketball-708.webp 708w,
+                        ./image/basketball-740.webp 740w,
+                        ./image/basketball-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/basketball-354.jpg"
+                      alt="Дизайн постера"
+                      class="card-foto"
+                      srcset="
+                        ./image/basketball-354.jpg 354w,
+                        ./image/basketball-370.jpg 370w,
+                        ./image/basketball-450.jpg 450w,
+                        ./image/basketball-708.jpg 708w,
+                        ./image/basketball-740.jpg 740w,
+                        ./image/basketball-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -149,11 +251,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/restaurant.jpg"
-                    alt="Приложение для ресторана"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/restaurant-370.webp 370w,
+                        ./image/restaurant-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/restaurant-354.webp 354w,
+                        ./image/restaurant-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/restaurant-450.webp 450w,
+                        ./image/restaurant-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/restaurant-354.webp 354w,
+                        ./image/restaurant-370.webp 370w,
+                        ./image/restaurant-450.webp 450w,
+                        ./image/restaurant-708.webp 708w,
+                        ./image/restaurant-740.webp 740w,
+                        ./image/restaurant-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/restaurant-354.jpg"
+                      alt="Приложение для ресторана"
+                      class="card-foto"
+                      srcset="
+                        ./image/restaurant-354.jpg 354w,
+                        ./image/restaurant-370.jpg 370w,
+                        ./image/restaurant-450.jpg 450w,
+                        ./image/restaurant-708.jpg 708w,
+                        ./image/restaurant-740.jpg 740w,
+                        ./image/restaurant-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -170,11 +323,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/naushniki.jpg"
-                    alt="Наушники"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/headphones-370.webp 370w,
+                        ./image/headphones-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/headphones-354.webp 354w,
+                        ./image/headphones-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/headphones-450.webp 450w,
+                        ./image/headphones-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/headphones-354.webp 354w,
+                        ./image/headphones-370.webp 370w,
+                        ./image/headphones-450.webp 450w,
+                        ./image/headphones-708.webp 708w,
+                        ./image/headphones-740.webp 740w,
+                        ./image/headphones-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/headphones-354.jpg"
+                      alt="Наушники"
+                      class="card-foto"
+                      srcset="
+                        ./image/headphones-354.jpg 354w,
+                        ./image/headphones-370.jpg 370w,
+                        ./image/headphones-450.jpg 450w,
+                        ./image/headphones-708.jpg 708w,
+                        ./image/headphones-740.jpg 740w,
+                        ./image/headphones-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -191,11 +395,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/boxes.jpg"
-                    alt="Две коробки"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/boxes-370.webp 370w,
+                        ./image/boxes-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/boxes-354.webp 354w,
+                        ./image/boxes-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/boxes-450.webp 450w,
+                        ./image/boxes-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/boxes-354.webp 354w,
+                        ./image/boxes-370.webp 370w,
+                        ./image/boxes-450.webp 450w,
+                        ./image/boxes-708.webp 708w,
+                        ./image/boxes-740.webp 740w,
+                        ./image/boxes-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/boxes-354.jpg"
+                      alt="Две коробки"
+                      class="card-foto"
+                      srcset="
+                        ./image/boxes-354.jpg 354w,
+                        ./image/boxes-370.jpg 370w,
+                        ./image/boxes-450.jpg 450w,
+                        ./image/boxes-708.jpg 708w,
+                        ./image/boxes-740.jpg 740w,
+                        ./image/boxes-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -212,11 +467,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/karta.jpg"
-                    alt="Веб-сайт"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/map-370.webp 370w,
+                        ./image/map-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/map-354.webp 354w,
+                        ./image/map-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/map-450.webp 450w,
+                        ./image/map-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/map-354.webp 354w,
+                        ./image/map-370.webp 370w,
+                        ./image/map-450.webp 450w,
+                        ./image/map-708.webp 708w,
+                        ./image/map-740.webp 740w,
+                        ./image/map-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/map-354.jpg"
+                      alt="Веб-сайт"
+                      class="card-foto"
+                      srcset="
+                        ./image/map-354.jpg 354w,
+                        ./image/map-370.jpg 370w,
+                        ./image/map-450.jpg 450w,
+                        ./image/map-708.jpg 708w,
+                        ./image/map-740.jpg 740w,
+                        ./image/map-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -233,11 +539,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/izdanie.jpg"
-                    alt="Дизайн для издания"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/magazine-370.webp 370w,
+                        ./image/magazine-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/magazine-354.webp 354w,
+                        ./image/magazine-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/magazine-450.webp 450w,
+                        ./image/magazine-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/magazine-354.webp 354w,
+                        ./image/magazine-370.webp 370w,
+                        ./image/magazine-450.webp 450w,
+                        ./image/magazine-708.webp 708w,
+                        ./image/magazine-740.webp 740w,
+                        ./image/magazine-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/magazine-354.jpg"
+                      alt="Дизайн для издания"
+                      class="card-foto"
+                      srcset="
+                        ./image/magazine-354.jpg 354w,
+                        ./image/magazine-370.jpg 370w,
+                        ./image/magazine-450.jpg 450w,
+                        ./image/magazine-708.jpg 708w,
+                        ./image/magazine-740.jpg 740w,
+                        ./image/magazine-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -254,11 +611,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/lab.jpg"
-                    alt="Проект LAB"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/lab-370.webp 370w,
+                        ./image/lab-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/lab-354.webp 354w,
+                        ./image/lab-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/lab-450.webp 450w,
+                        ./image/lab-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/lab-354.webp 354w,
+                        ./image/lab-370.webp 370w,
+                        ./image/lab-450.webp 450w,
+                        ./image/lab-708.webp 708w,
+                        ./image/lab-740.webp 740w,
+                        ./image/lab-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/lab-354.jpg"
+                      alt="Проект LAB"
+                      class="card-foto"
+                      srcset="
+                        ./image/lab-354.jpg 354w,
+                        ./image/lab-370.jpg 370w,
+                        ./image/lab-450.jpg 450w,
+                        ./image/lab-708.jpg 708w,
+                        ./image/lab-740.jpg 740w,
+                        ./image/lab-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -275,11 +683,62 @@
             <li class="item">
               <a href="" class="cards-link">
                 <div class="cards-block">
-                  <img
-                    src="./image/noutbook.jpg"
-                    alt="Ноутбук"
-                    class="card-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/laptop-370.webp 370w,
+                        ./image/laptop-740.webp 740w
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/laptop-354.webp 354w,
+                        ./image/laptop-708.webp 708w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 768px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/laptop-450.webp 450w,
+                        ./image/laptop-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(min-width: 480px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="
+                        ./image/laptop-354.webp 354w,
+                        ./image/laptop-370.webp 370w,
+                        ./image/laptop-450.webp 450w,
+                        ./image/laptop-708.webp 708w,
+                        ./image/laptop-740.webp 740w,
+                        ./image/laptop-900.webp 900w
+                      "
+                      type=" image/webp"
+                      media="(max-width: 479px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                    <img
+                      src="./image/laptop-354p.jpg"
+                      alt="Ноутбук"
+                      class="card-foto"
+                      srcset="
+                        ./image/laptop-354.jpg 354w,
+                        ./image/laptop-370.jpg 370w,
+                        ./image/laptop-450.jpg 450w,
+                        ./image/laptop-708.jpg 708w,
+                        ./image/laptop-740.jpg 740w,
+                        ./image/laptop-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    />
+                  </picture>
                   <p class="card-desc--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -392,5 +851,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

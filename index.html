@@ -18,7 +18,7 @@
           ><span class="logo-accent">Web</span>Studio</a
         >
 
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button" data-menu-button>
           <svg
             class="mobile-menu-icon"
             width="40"
@@ -151,30 +151,57 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="item">
-              <img
-                src="./image/rozrabotka.jpg"
-                alt="Разработка сайтов"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/razrabotka.webp   1x,
+                    ./image/razrabotka2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  alt="Разработка сайтов"
+                  width="370"
+                  height="294"
+                  src="./image/razrabotka.jpg"
+                  srcset="./image/razrabotka2x.jpg 2x"
+                />
+              </picture>
               <p class="work--title">Десктопные приложения</p>
             </li>
             <li class="item">
-              <img
-                src="./image/adaptiv-saitov.jpg"
-                alt="Адаптивные сайты"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/adaptiv-saitov.webp   1x,
+                    ./image/adaptiv-saitov2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  alt="Адаптивные сайты"
+                  width="370"
+                  height="294"
+                  src="./image/adaptiv-saitov.jpg"
+                  srcset="./image/adaptiv-saitov2x.jpg 2x"
+                />
+              </picture>
               <p class="work--title">Мобильные приложения</p>
             </li>
             <li class="item">
-              <img
-                src="./image/dizain.jpg"
-                alt="Создание дизайна для сайтов"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./image/dizain.webp 1x, ./image/dizain2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  alt="Создание дизайна для сайтов"
+                  width="370"
+                  height="294"
+                  src="./image/dizain.jpg"
+                  srcset="./image/dizain2x.jpg 2x"
+                />
+              </picture>
               <p class="work--title">Дизайнерские решения</p>
             </li>
           </ul>
@@ -188,11 +215,63 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="item">
-              <img
-                class="photo"
-                src="./image/demyanenko.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/demyanenko-540.webp 540w,
+                    ./image/demyanenko-270.webp 270w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/demyanenko-354.webp 354w,
+                    ./image/demyanenko-708.webp 708w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/demyanenko-450.webp 450w,
+                    ./image/demyanenko-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/demyanenko-270.webp 270w,
+                    ./image/demyanenko-354.webp 354w,
+                    ./image/demyanenko-450.webp 450w,
+                    ./image/demyanenko-540.webp 540w,
+                    ./image/demyanenko-708.webp 708w,
+                    ./image/demyanenko-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(max-width: 479px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+
+                <img
+                  class="photo"
+                  alt="Игорь Демьяненко"
+                  src="./image/demyanenko-270.jpg"
+                  srcset="
+                    ./image/demyanenko-270.jpg 270w,
+                    ./image/demyanenko-354.jpg 354w,
+                    ./image/demyanenko-450.jpg 450w,
+                    ./image/demyanenko-540.jpg 540w,
+                    ./image/demyanenko-708.jpg 708w,
+                    ./image/demyanenko-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+              </picture>
               <h3 class="name">Игорь Демьяненко</h3>
               <p class="specialty" lang="en">Product Designer</p>
               <ul class="social">
@@ -227,7 +306,62 @@
               </ul>
             </li>
             <li class="item">
-              <img class="photo" src="./image/repina.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/repina-540.webp 540w,
+                    ./image/repina-270.webp 270w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/repina-354.webp 354w,
+                    ./image/repina-708.webp 708w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/repina-450.webp 450w,
+                    ./image/repina-900.webp 900w
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/repina-270.webp 270w,
+                    ./image/repina-354.webp 354w,
+                    ./image/repina-450.webp 450w,
+                    ./image/repina-540.webp 540w,
+                    ./image/repina-708.webp 708w,
+                    ./image/repina-900.webp 900w
+                  "
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <img
+                  class="photo"
+                  alt="Ольга Репина"
+                  src="./image/repina-270.jpg"
+                  srcset="
+                    ./image/repina-270.jpg 270w,
+                    ./image/repina-354.jpg 354w,
+                    ./image/repina-450.jpg 450w,
+                    ./image/repina-540.jpg 540w,
+                    ./image/repina-708.jpg 708w,
+                    ./image/repina-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+              </picture>
               <h3 class="name">Ольга Репина</h3>
               <p class="specialty" lang="en">Frontend Developer</p>
               <ul class="social">
@@ -262,11 +396,62 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./image/tarasov.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/tarasov-540.webp 540w,
+                    ./image/tarasov-270.webp 270w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/tarasov-354.webp 354w,
+                    ./image/tarasov-708.webp 708w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/tarasov-450.webp 450w,
+                    ./image/tarasov-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/tarasov-270.webp 270w,
+                    ./image/tarasov-354.webp 354w,
+                    ./image/tarasov-450.webp 450w,
+                    ./image/tarasov-540.webp 540w,
+                    ./image/tarasov-708.webp 708w,
+                    ./image/tarasov-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(max-width: 479px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <img
+                  class="photo"
+                  alt="Николай Тарасов"
+                  src="./image/tarasov-270.jpg"
+                  srcset="
+                    ./image/tarasov-270.jpg 270w,
+                    ./image/tarasov-354.jpg 354w,
+                    ./image/tarasov-450.jpg 450w,
+                    ./image/tarasov-540.jpg 540w,
+                    ./image/tarasov-708.jpg 708w,
+                    ./image/tarasov-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+              </picture>
               <h3 class="name">Николай Тарасов</h3>
               <p class="specialty" lang="en">Marketing</p>
               <ul class="social">
@@ -301,11 +486,62 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./image/ermakov.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/ermakov-540.webp 540w,
+                    ./image/ermakov-270.webp 270w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/ermakov-354.webp 354w,
+                    ./image/ermakov-708.webp 708w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/ermakov-450.webp 450w,
+                    ./image/ermakov-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./image/ermakov-270.webp 270w,
+                    ./image/ermakov-354.webp 354w,
+                    ./image/ermakov-450.webp 450w,
+                    ./image/ermakov-540.webp 540w,
+                    ./image/ermakov-708.webp 708w,
+                    ./image/ermakov-900.webp 900w
+                  "
+                  type=" image/webp"
+                  media="(max-width: 479px)"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+                <img
+                  class="photo"
+                  alt="Михаил Ермаков"
+                  src="./image/ermakov-270.jpg"
+                  srcset="
+                    ./image/ermakov-270.jpg 270w,
+                    ./image/ermakov-354.jpg 354w,
+                    ./image/ermakov-450.jpg 450w,
+                    ./image/ermakov-540.jpg 540w,
+                    ./image/ermakov-708.jpg 708w,
+                    ./image/ermakov-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                />
+              </picture>
               <h3 class="name">Михаил Ермаков</h3>
               <p class="specialty" lang="en">UI Designer</p>
               <ul class="social">
@@ -570,6 +806,7 @@
         </button>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
