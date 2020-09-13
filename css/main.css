@@ -462,6 +462,10 @@ button {
   opacity: 0;
 }
 
+.navigation-links {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .navigation-links {
     position: absolute;
