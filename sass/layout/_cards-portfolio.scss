@@ -35,7 +35,8 @@
     }
   }
 
-  .item:hover .card-desc--text {
+  .cards-link:hover .card-desc--text,
+  .cards-link:focus .card-desc--text {
     transform: translateY(0);
   }
 

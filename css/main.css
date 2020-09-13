@@ -431,11 +431,20 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-button.is-open .icon-close,
-  .menu-button.is-open ~ .navigation-links {
-    transform: scale(1);
+  .menu-button.is-open .icon-close {
     opacity: 1;
-    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button.is-open ~ .nav-wrapper {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button.is-open ~ .navigation-links {
+    transform: translateX(0);
     pointer-events: auto;
   }
 }
@@ -453,22 +462,22 @@ button {
   opacity: 0;
 }
 
-.navigation-links {
-  width: 100%;
-}
-
 @media screen and (max-width: 767px) {
   .navigation-links {
-    opacity: 0;
-    pointer-events: none;
     position: absolute;
-    top: calc(100% + 1px);
+    pointer-events: none;
+    top: 61px;
     left: 0;
-    transform: scale(0.7);
+    right: 0;
+    bottom: 0;
+    max-height: 420px;
+    overflow-y: scroll;
+    z-index: 1;
+    transform: translateX(-100%);
     padding: 60px 0;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -548,14 +557,11 @@ button {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .stop-scroll {
-    overflow: hidden;
-  }
+.stop-scroll {
+  overflow: hidden;
 }
 
 .page-header {
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
