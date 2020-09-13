@@ -139,3 +139,9 @@
 .current {
   color: $accent-color;
 }
+
+.stop-scroll {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}

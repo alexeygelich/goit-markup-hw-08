@@ -547,6 +547,12 @@ button {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .stop-scroll {
+    overflow: hidden;
+  }
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
