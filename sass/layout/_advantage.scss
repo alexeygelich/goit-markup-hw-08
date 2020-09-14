@@ -46,17 +46,23 @@
     height: 120px;
     background-color: $btn-filter-color;
   }
-}
 
-.advantage .item {
-  max-width: 450px;
-
-  @media screen and (min-width: 768px) {
-    max-width: calc((100% - 60px) / 2);
-    margin: 15px;
+  .item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: calc((100% - 120px) / 4);
+  .item {
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      max-width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: calc((100% - 120px) / 4);
+    }
   }
 }
